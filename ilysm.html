@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I Love You Riya</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body {
+      background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .heart-svg {
+      width: 110px;
+      height: 110px;
+      margin-top: 40px;
+    }
+    .love-pop {
+      margin-top: 18px;
+      color: #ff4343;
+      font-weight: bold;
+      font-size: 1.9em;
+      opacity: 0;
+      transition: opacity 0.7s;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    .love-pop.show {
+      opacity: 1;
+    }
+    .love-paragraph {
+      max-width: 500px;
+      background: #fff8fc;
+      padding: 16px;
+      margin-top: 40px;
+      border-radius: 12px;
+      color: #222;
+      font-size: 1.08em;
+      box-shadow: 0 1px 8px #eed;
+      text-align: center;
+      border-top: 3px solid #ff4343;
+    }
+  </style>
+</head>
+<body>
+  <svg class="heart-svg" viewBox="0 0 32 32">
+    <path fill="#ff4343" stroke="#222" stroke-width="1.5" d="M16 29s-13.5-9.6-13.5-17.4c0-3.7 2.7-6.1 6.1-6.1 2.1 0 4 1.2 5.4 3.2 1.4-2 3.3-3.2 5.4-3.2 3.5 0 6.1 2.4 6.1 6.1C29.5 19.4 16 29 16 29z"/>
+  </svg>
+  <div class="love-pop" id="lovePop">I LOVE YOU SO MUCH</div>
+  <div class="love-paragraph">
+    To Riya Walter,<br>
+    You are the prettiest girl in my world, lighting up every moment like a beautiful Minecraft sunset. My love for you is vast and heartwarming, just like these landscapes. Thank you for being so adorable, sweet, and caring. I love you more than anything, and my heart will always belong to you.
+  </div>
+  <script>
+    setTimeout(function() {
+      document.getElementById('lovePop').classList.add('show');
+    }, 1200);
+  </script>
+</body>
+</html>
