@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Minecraft Love Fast</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body {
+      background: #cdeba7;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .cute-visual {
+      color: #228B22;
+      background: #fff;
+      padding: 8px 18px;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      box-shadow: 1px 1px 5px #bbb;
+      font-size: 1.25em;
+    }
+    .heart-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+    .heart-svg {
+      width: 80px;
+      height: 80px;
+      display: block;
+      margin: auto;
+    }
+    .popup {
+      margin-top: 22px;
+      color: #ff4343;
+      font-weight: bold;
+      font-size: 1.6em;
+      opacity: 0;
+      transition: opacity 0.7s;
+      text-align: center;
+    }
+    .popup.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="cute-visual">Welcome to a Minecraft Meadow of Love!</div>
+  <button class="heart-btn" id="heartBtn" aria-label="Go to next page">
+    <svg class="heart-svg" viewBox="0 0 32 32">
+      <path fill="#ff4343" stroke="#222" stroke-width="1.5" d="M16 29s-13.5-9.6-13.5-17.4c0-3.7 2.7-6.1 6.1-6.1 2.1 0 4 1.2 5.4 3.2 1.4-2 3.3-3.2 5.4-3.2 3.5 0 6.1 2.4 6.1 6.1C29.5 19.4 16 29 16 29z"/>
+    </svg>
+  </button>
+  <div class="popup" id="popupText">I LOVE YOU</div>
+  <script>
+    document.getElementById('heartBtn').onclick = function() {
+      window
